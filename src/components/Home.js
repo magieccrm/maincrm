@@ -54,7 +54,7 @@ function Home() {
     } catch (error) {
       const message = await error?.response?.data?.message;
       if (message == 'Client must be connected before running operations' || message == 'Internal Server Error') {
-        getSale();
+       
       }
       console.log(error);
     }
